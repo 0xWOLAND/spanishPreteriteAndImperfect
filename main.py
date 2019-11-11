@@ -1497,9 +1497,9 @@ def traer():
         elif traer_question == 1:
             ans16 = input("(Tú) \n")
             if ans16.upper() == traer_conj_words["(Tú)"]:
-              print("That is correct\n")
-              score
-              score += 1
+                print("That is correct\n")
+                score
+                score += 1
             else:
                 print("That is incorrect. The correct answer is ", traer_conj_words["(Tú)"])
                 webbrowser.open_new(url + '/{}'.format('traer'))
@@ -2398,9 +2398,9 @@ def caer():
         elif caer_question == 4:
             ans25 = input("(Usted) \n")
             if ans25.upper() == caer_conj_words["(Usted)"]:
-              print("That is correct\n")
-              score
-              score += 1
+                print("That is correct\n")
+                score
+                score += 1
             else:
                 print("That is incorrect. The correct answer is ", caer_conj_words["(Usted)"])
                 webbrowser.open_new(url + '/{}'.format('caer'))
@@ -3736,7 +3736,7 @@ def signalQuiz():
                 score
                 score += 1
             else:
-              print("That is incorrect. The correct answer is ", signals.get("to the (verb) [ex. upon arrival] "))
+                print("That is incorrect. The correct answer is ", signals.get("to the (verb) [ex. upon arrival] "))
         elif signal_question == 2:
             ans38 = input("last night \n")
             if ans38.lower() == signals.get("last night "):
@@ -3995,160 +3995,159 @@ def imperfectSignalQuiz():
         signal_question = random.randint(0, len(imperfect_signals))
         if signal_question == 0:
             ans38 = input("often \n")
-            if ans38.lower() == signals.get("often "):
+            if ans38.lower() == imperfect_signals.get("often "):
                 print("That is correct \n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("often "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("often "))
         elif signal_question == 1:
             ans38 = input("sometimes \n")
-            if ans38.lower() == signals.get("sometimes "):
+            if ans38.lower() == imperfect_signals.get("sometimes "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-              print("That is incorrect. The correct answer is ", signals.get("sometimes "))
+              print("That is incorrect. The correct answer is ", imperfect_signals.get("sometimes "))
         elif signal_question == 2:
             ans38 = input("other times \n")
-            if ans38.lower() == signals.get("other times "):
+            if ans38.lower() == imperfect_signals.get("other times "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("other times "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("other times "))
         elif signal_question == 3:
             ans38 = input("each year \n")
-            if ans38.lower() == signals.get("each year "):
+            if ans38.lower() == imperfect_signals.get("each year "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("each year "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("each year "))
         elif signal_question == 4:
             ans38 = input("cada día \n")
-            if ans38.lower() == signals.get("cada día "):
+            if ans38.lower() == imperfect_signals.get("cada día "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("cada día "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("cada día "))
         elif signal_question == 5:
             ans38 = input("cada semana \n")
-            if ans38.lower() == signals.get("cada semana "):
+            if ans38.lower() == imperfect_signals.get("cada semana "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("cada semana "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("cada semana "))
         elif signal_question == 6:
             ans38 = input("con frecuencia \n")
-            if ans38.lower() == signals.get("con frecuencia "):
+            if ans38.lower() == imperfect_signals.get("con frecuencia "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("con frecuencia "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("con frecuencia "))
         elif signal_question == 7:
             ans38 = input("de costumbre \n")
-            if ans38.lower() == signals["de costumbre "]:
+            if ans38.lower() == imperfect_signals["de costumbre "]:
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("de costumbre "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("de costumbre "))
         elif signal_question == 8:
             ans38 = input("de vez de cuando \n")
-            if ans38.lower() == signals.get("de vez de cuando "):
+            if ans38.lower() == imperfect_signals.get("de vez de cuando "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("de vez de cuando "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("de vez de cuando "))
         elif signal_question == 9:
             ans38 = input("durante \n")
-            if ans38.lower() == signals.get("durante "):
+            if ans38.lower() == imperfect_signals.get("durante "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("durante "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("durante "))
         elif signal_question == 10:
             ans38 = input("en aquella época \n")
-            if ans38.lower() == signals.get("en aquella época "):
+            if ans38.lower() == imperfect_signals.get("en aquella época "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("en aquella época "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("en aquella época "))
         elif signal_question == 11:
             ans38 = input("frecuentemente \n")
-            if ans38.lower() == signals.get("frecuentemente "):
+            if ans38.lower() == imperfect_signals.get("frecuentemente "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("frecuentemente "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("frecuentemente "))
         elif signal_question == 12:
             ans38 = input("generalmente \n")
-            if ans38.lower() == signals.get("generalmente "):
+            if ans38.lower() == imperfect_signals.get("generalmente "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("generalmente "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("generalmente "))
         elif signal_question == 13:
             ans38 = input("mientras \n")
-            if ans38.lower() == signals.get("mientras "):
+            if ans38.lower() == imperfect_signals.get("mientras "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("mientras "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("mientras "))
         elif signal_question == 14:
             ans38 = input("muchas veces \n")
-            if ans38.lower() == signals.get("muchas veces "):
+            if ans38.lower() == imperfect_signals.get("muchas veces "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("muchas veces "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("muchas veces "))
         elif signal_question == 15:
             ans38 = input("nunca \n")
-            if ans38.lower() == signals.get("nunca "):
+            if ans38.lower() == imperfect_signals.get("nunca "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("nunca "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("nunca "))
         elif signal_question == 16:
             ans38 = input("mucho \n")
-            if ans38.lower() == signals.get("mucho "):
+            if ans38.lower() == imperfect_signals.get("mucho "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("mucho "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("mucho "))
         elif signal_question == 17:
             ans38 = input("por lo general \n")
-            if ans38.lower() == signals.get("por lo general "):
+            if ans38.lower() == imperfect_signals.get("por lo general "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("por lo general "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("por lo general "))
         elif signal_question == 18:
             ans38 = input("por un rato \n")
-            if ans38.lower() == signals.get("por un rato "):
+            if ans38.lower() == imperfect_signals.get("por un rato "):
                 print("That is correct\n")
                 score
                 score += 1
             else:
-                print("That is incorrect. The correct answer is ", signals.get("por un rato "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("por un rato "))
         else:
             print("There is an error in the code under imperfectSignalQuiz() \n")
-        print("Current Score: ", score)
-# ---------------------Vocabulary of Imperfect Verbs----------------------
+        print("Current Score: ", score)# ---------------------Vocabulary of Imperfect Verbs----------------------
 andar_conj_words = {
     "(Yo)": "ANDUVE",
     "(Tú)": "ANDUVISTE",
@@ -4647,9 +4646,9 @@ organizar_conj_words = {
 
 # ----------------------The Preterite is used for:---------------------
 preterite_uses = ["Specific actions or events completed in the past.", "Isolated actions that happened once",
-                  "Narrating a series of completed actions or events.",
-                  "Interrupting an action that was already happening.",
-                  "Preterite of 'Hay' = HUBO (There was, there were)"]
+                "Narrating a series of completed actions or events.",
+                "Interrupting an action that was already happening.",
+                "Preterite of 'Hay' = HUBO (There was, there were)"]
 
 # -----------------------Signals----------------------------------------
 signals = {
@@ -4690,25 +4689,25 @@ signals = {
 }
 
 imperfect_signals = {
-  "often ": "a menudo",
-  "sometimes ": "a veces",
-  "other times ": "algunas veces",
-  "each year ": "cada año",
-  "cada día ": "each day",
-  "cada semana": "each week",
-  "con frecuencia ": "frequently",
-  "de costumbre": "as usual",
-  "de vez en cuando": " from time to time",
-  "durante ": "during",
-  "en aquella época ": "at that time",
-  "frecuentemente ": "frequently",
-  "generalmente ": "generally",
-  "mientras ": "while",
-  "muchas veces ": "many times",
-  "mucho ": "a lot",
-  "nunca ": "never",
-  "por lo general ": "generally",
-  "por un rato ": "for awhile",
+"often ": "a menudo",
+"sometimes ": "a veces",
+"other times ": "algunas veces",
+"each year ": "cada año",
+"cada día ": "each day",
+"cada semana": "each week",
+"con frecuencia ": "frequently",
+"de costumbre ": "as usual",
+"de vez en cuando": " from time to time",
+"durante ": "during",
+"en aquella época ": "at that time",
+"frecuentemente ": "frequently",
+"generalmente ": "generally",
+"mientras ": "while",
+"muchas veces ": "many times",
+"mucho ": "a lot",
+"nunca ": "never",
+"por lo general ": "generally",
+"por un rato ": "for awhile",
 }
 # -----------------------Housekeeping---------------------------------
 def stop():
@@ -4719,193 +4718,194 @@ def stop():
 
 
 # ----------------------Practice Code-------------------
-print("Para practicar para la prueba, yo hice esta programma computadora\n")
-print("***Only the preterite verb quiz is done\n")
-selection = input("(1) Pretérito o (2) Imperfecto \n")
-if selection == "1":
-  preterite_selection = input(
-      "Sus opciones son (1) verbos irregulares, (2) Stem Changers,  (3) -CAR, -GAR, -ZAR, (4) Cuándo debe usar un verbo pretérito, y (5) señales \n")
-  if preterite_selection == "1":
-      irregular_list = ["Andar (to walk)", "Caber (to fit)", "Conducir (to drive)", "Dar (to give)",
-                        "Decir (to tell)", "Estar (to be)", "Hacer (to do/make)", "Ir (to go)",
-                        "Poder (to be able to)", "Poner (to put)", "Querer (to want)", "Saber(to know)", "Ser(to be)",
-                        "Tener (to have)", "Traducir (to translate)", "Traer (to bring)", "Venir (to come)",
-                        "verb(to see)"]
-      print("This category is Irregular Verbs\n")
-      rand_word = [x for x in range(17)]
-      np.random.shuffle(rand_word)
-      for i in rand_word:
-          question_loc = rand_word[i]
-          question = irregular_list[question_loc]
-          if question_loc == 0:
-              print("Your irregular word is andar \n")
-              andar()
-          elif question_loc == 1:
-              print("Your irregular word is caber \n")
-              caber()
-          elif question_loc == 2:
-              print("Your irregular word is conducir \n")
-              conducir()
-          elif question_loc == 3:
-              print("Your irregular verb is dar \n")
-              dar()
-          elif question_loc == 4:
-              print("Your irregular verb is decir \n")
-              decir()
-          elif question_loc == 5:
-              print("Your irregular verb is estar \n")
-              estar()
-          elif question_loc == 6:
-              print("Your irregular verb is hacer \n")
-              hacer()
-          elif question_loc == 7:
-              print("Your irregular verb is ir \n")
-              ir()
-          elif question_loc == 8:
-              print("Your irregular verb is poder \n")
-              poder()
-          elif question_loc == 9:
-              print("Your irregular verb is poner \n")
-              poner()
-          elif question_loc == 10:
-              print("Your irregular verb is querer \n")
-              querer()
-          elif question_loc == 11:
-              print("Your irregular verb is saber \n")
-              saber()
-          elif question_loc == 12:
-              print("Your irregular verb is ser \n")
-              ser()
-          elif question_loc == 13:
-              print("Your irregular verb is tener \n")
-              tener()
-          elif question_loc == 14:
-              print("Your irregular verb is traducir \n")
-              traducir()
-          elif question_loc == 15:
-              print("Your irregular verb is traer \n")
-              traer()
-          elif question_loc == 16:
-              print("Your irregular verb is venir \n")
-              venir()
-          elif question_loc == 17:
-              print("Your irregular verb is verb\n")
-              ver()
-          else:
-              ("question_loc is out of the range between 0-17. Check for any errors in code\n")
-          stop()
-  elif preterite_selection == "2":
-      print("This category is Stem Changers \n")
-      print("Some things that you should know about stem changers are the following: \n")
-      stem_changers_init = input(
-          "Verbs that end in -ir and goes through a stem-change (boot verbs) are the only verbs that go through a stem change in the preterite tense. The changes are [e to i] and [o to u]. For verbs that end in [aer, eer, oír, oer, or uir], there is a special spelling change. In the third person forms, the [i becomes a y] (ex. yó, yeron). The remaining forms gain written accent over the letter i, except for [uir] verbs, where there are no irregular accents. Verbs that end in [guir] do not follow this pattern. (Click enter once you are done reading this) \n")
-      if stem_changers_init == "":
-          stem_changers_list = ["Dormir (to sleep)", "Morir (to die)", "Pedir (to ask for)", "Preferir (to prefer)",
-                                "Seguir (to follow)", "Sentir (to feel)", "Caer (to fall)", "Creer (to think)",
-                                "Leer (to read)", "Oir (to hear)", "Destruir (to destroy)"]
-          print("This category is Stem Changers\n")
-          stem_changer_rand_word = [x for x in range(11)]
-          np.random.shuffle(stem_changer_rand_word)
-          for i in stem_changer_rand_word:
-              stem_changer_question_loc = stem_changer_rand_word[i]
-              if stem_changer_question_loc == 0:
-                  print("Your irregular word is dormir \n")
-                  dormir()
-              elif stem_changer_question_loc == 1:
-                  print("Your irregular word is morir \n")
-                  morir()
-              elif stem_changer_question_loc == 2:
-                  print("Your irregular word is pedir \n")
-                  pedir()
-              elif stem_changer_question_loc == 3:
-                  print("Your irregular verb is preferir \n")
-                  preferir()
-              elif stem_changer_question_loc == 4:
-                  print("Your irregular verb is seguir \n")
-                  seguir()
-              elif stem_changer_question_loc == 5:
-                  print("Your irregular verb is sentir \n")
-                  sentir()
-              elif stem_changer_question_loc == 6:
-                  print("Your irregular verb is caer \n")
-                  caer()
-              elif stem_changer_question_loc == 7:
-                  print("Your irregular verb is creer \n")
-                  creer()
-              elif stem_changer_question_loc == 8:
-                  print("Your irregular verb is leer \n")
-                  leer()
-              elif stem_changer_question_loc == 9:
-                  print("Your irregular verb is oir \n")
-                  oir()
-              elif stem_changer_question_loc == 10:
-                  print("Your irregular verb is destruir \n")
-                  destruir()
-              else:
-                  ("stem_changer_question_loc is out of the range between 0-17. Check for any errors in code\n")
-              stop()
-          else:
-              print(
-                  "Foreign characters other than [ENTER] have been detected or you have completed your study session!\n")
-  elif preterite_selection == "4":
-      while True:
-          rand_rule = [x for x in range(4)]
-          np.random.shuffle(rand_rule)
-          for i in rand_rule:
-              print(preterite_uses[i])
-              inputVal = input("[SPACE] for continue\n")
-              if inputVal == "":
-                  score += 1
-                  print("Current Score: ", score)
-                  stop()
-  elif preterite_selection == "3":
-      cgz_irregular_list = cgz_irregular_list = ["Buscar (to search)","Sacar (to take)","Tocar (to play [ex. instrument])", "Jugar (to play [ex. sports])","Llegar (to arrive)","Pagar (to pay)", "Almorzar (to eat lunch)", "Empezar (To start)","Organizar (to organize)"]
-      print("This category is Irregular Verbs\n")
-      cgz_rand_word = [x for x in range(9)]
-      np.random.shuffle(cgz_rand_word)
-      for i in cgz_rand_word:
-          cgz_question_loc = cgz_rand_word[i]
-          cgz_question = cgz_irregular_list[cgz_question_loc]
-          if cgz_question_loc == 0:
-              print("Your irregular word is buscar \n")
-              buscar()
-          elif cgz_question_loc == 1:
-              print("Your irregular word is sacar \n")
-              sacar()
-          elif cgz_question_loc == 2:
-              print("Your irregular word is tocar \n")
-              tocar()
-          elif cgz_question_loc == 3:
-              print("Your irregular verb is jugar \n")
-              jugar()
-          elif cgz_question_loc == 4:
-              print("Your irregular verb is llegar \n")
-              llegar()
-          elif cgz_question_loc == 5:
-              print("Your irregular verb is pagar \n")
-              pagar()
-          elif cgz_question_loc == 6:
-              print("Your irregular verb is almorzar \n")
-              almorzar()
-          elif cgz_question_loc == 7:
-              print("Your irregular verb is empezar \n")
-              empezar()
-          elif cgz_question_loc == 8:
-              print("Your irregular verb is organizar \n")
-              organizar()
-          else:
-              ("question_loc is out of the range between 0-9. Check for any errors in code\n")
-          stop()
-  elif preterite_selection == "5":
-      while True:
-          signalQuiz()
-          stop()
-elif selection == "2":
-  solution = input("(1) Signals for imperfect verbs")
-  if solution == '1':
-    while True:
-        imperfectSignalQuiz()
-          stop()
-else:
-    print("Invalid selection\n")
-    sys.exit()
+def main():
+    print("Para practicar para la prueba, yo hice esta programma computadora\n")
+    print("***Only the preterite verb quiz is done\n")
+    selection = input("(1) Pretérito o (2) Imperfecto \n")
+    if selection == "1":
+        preterite_selection = input("Sus opciones son (1) verbos irregulares, (2) Stem Changers,  (3) -CAR, -GAR, -ZAR, (4) Cuándo debe usar un verbo pretérito, y (5) señales \n")
+        if preterite_selection == "1":
+            irregular_list = ["Andar (to walk)", "Caber (to fit)", "Conducir (to drive)", "Dar (to give)",
+                                "Decir (to tell)", "Estar (to be)", "Hacer (to do/make)", "Ir (to go)",
+                                "Poder (to be able to)", "Poner (to put)", "Querer (to want)", "Saber(to know)", "Ser(to be)",
+                                "Tener (to have)", "Traducir (to translate)", "Traer (to bring)", "Venir (to come)",
+                                "verb(to see)"]
+            print("This category is Irregular Verbs\n")
+            rand_word = [x for x in range(17)]
+            np.random.shuffle(rand_word)
+            for i in rand_word:
+                question_loc = rand_word[i]
+                question = irregular_list[question_loc]
+                if question_loc == 0:
+                    print("Your irregular word is andar \n")
+                    andar()
+                elif question_loc == 1:
+                    print("Your irregular word is caber \n")
+                    caber()
+                elif question_loc == 2:
+                    print("Your irregular word is conducir \n")
+                    conducir()
+                elif question_loc == 3:
+                    print("Your irregular verb is dar \n")
+                    dar()
+                elif question_loc == 4:
+                    print("Your irregular verb is decir \n")
+                    decir()
+                elif question_loc == 5:
+                    print("Your irregular verb is estar \n")
+                    estar()
+                elif question_loc == 6:
+                    print("Your irregular verb is hacer \n")
+                    hacer()
+                elif question_loc == 7:
+                    print("Your irregular verb is ir \n")
+                    ir()
+                elif question_loc == 8:
+                    print("Your irregular verb is poder \n")
+                    poder()
+                elif question_loc == 9:
+                    print("Your irregular verb is poner \n")
+                    poner()
+                elif question_loc == 10:
+                    print("Your irregular verb is querer \n")
+                    querer()
+                elif question_loc == 11:
+                    print("Your irregular verb is saber \n")
+                    saber()
+                elif question_loc == 12:
+                    print("Your irregular verb is ser \n")
+                    ser()
+                elif question_loc == 13:
+                    print("Your irregular verb is tener \n")
+                    tener()
+                elif question_loc == 14:
+                    print("Your irregular verb is traducir \n")
+                    traducir()
+                elif question_loc == 15:
+                    print("Your irregular verb is traer \n")
+                    traer()
+                elif question_loc == 16:
+                    print("Your irregular verb is venir \n")
+                    venir()
+                elif question_loc == 17:
+                    print("Your irregular verb is verb\n")
+                    ver()
+                else:
+                    ("question_loc is out of the range between 0-17. Check for any errors in code\n")
+                stop()
+        elif preterite_selection == "2":
+            print("This category is Stem Changers \n")
+            print("Some things that you should know about stem changers are the following: \n")
+            stem_changers_init = input(
+                "Verbs that end in -ir and goes through a stem-change (boot verbs) are the only verbs that go through a stem change in the preterite tense. The changes are [e to i] and [o to u]. For verbs that end in [aer, eer, oír, oer, or uir], there is a special spelling change. In the third person forms, the [i becomes a y] (ex. yó, yeron). The remaining forms gain written accent over the letter i, except for [uir] verbs, where there are no irregular accents. Verbs that end in [guir] do not follow this pattern. (Click enter once you are done reading this) \n")
+            if stem_changers_init == "":
+                stem_changers_list = ["Dormir (to sleep)", "Morir (to die)", "Pedir (to ask for)", "Preferir (to prefer)",
+                                        "Seguir (to follow)", "Sentir (to feel)", "Caer (to fall)", "Creer (to think)",
+                                        "Leer (to read)", "Oir (to hear)", "Destruir (to destroy)"]
+                print("This category is Stem Changers\n")
+                stem_changer_rand_word = [x for x in range(11)]
+                np.random.shuffle(stem_changer_rand_word)
+                for i in stem_changer_rand_word:
+                    stem_changer_question_loc = stem_changer_rand_word[i]
+                    if stem_changer_question_loc == 0:
+                        print("Your irregular word is dormir \n")
+                        dormir()
+                    elif stem_changer_question_loc == 1:
+                        print("Your irregular word is morir \n")
+                        morir()
+                    elif stem_changer_question_loc == 2:
+                        print("Your irregular word is pedir \n")
+                        pedir()
+                    elif stem_changer_question_loc == 3:
+                        print("Your irregular verb is preferir \n")
+                        preferir()
+                    elif stem_changer_question_loc == 4:
+                        print("Your irregular verb is seguir \n")
+                        seguir()
+                    elif stem_changer_question_loc == 5:
+                        print("Your irregular verb is sentir \n")
+                        sentir()
+                    elif stem_changer_question_loc == 6:
+                        print("Your irregular verb is caer \n")
+                        caer()
+                    elif stem_changer_question_loc == 7:
+                        print("Your irregular verb is creer \n")
+                        creer()
+                    elif stem_changer_question_loc == 8:
+                        print("Your irregular verb is leer \n")
+                        leer()
+                    elif stem_changer_question_loc == 9:
+                        print("Your irregular verb is oir \n")
+                        oir()
+                    elif stem_changer_question_loc == 10:
+                        print("Your irregular verb is destruir \n")
+                        destruir()
+                    else:
+                        ("stem_changer_question_loc is out of the range between 0-17. Check for any errors in code\n")
+                    stop()
+                else:
+                    print(
+                        "Foreign characters other than [ENTER] have been detected or you have completed your study session!\n")
+        elif preterite_selection == "4":
+            while True:
+                rand_rule = [x for x in range(4)]
+                np.random.shuffle(rand_rule)
+                for i in rand_rule:
+                    print(preterite_uses[i])
+                    inputVal = input("[SPACE] for continue\n")
+                    if inputVal == "":
+                        score += 1
+                        print("Current Score: ", score)
+                        stop()
+        elif preterite_selection == "3":
+            cgz_irregular_list = cgz_irregular_list = ["Buscar (to search)","Sacar (to take)","Tocar (to play [ex. instrument])", "Jugar (to play [ex. sports])","Llegar (to arrive)","Pagar (to pay)", "Almorzar (to eat lunch)", "Empezar (To start)","Organizar (to organize)"]
+            print("This category is Irregular Verbs\n")
+            cgz_rand_word = [x for x in range(9)]
+            np.random.shuffle(cgz_rand_word)
+            for i in cgz_rand_word:
+                cgz_question_loc = cgz_rand_word[i]
+                cgz_question = cgz_irregular_list[cgz_question_loc]
+                if cgz_question_loc == 0:
+                    print("Your irregular word is buscar \n")
+                    buscar()
+                elif cgz_question_loc == 1:
+                    print("Your irregular word is sacar \n")
+                    sacar()
+                elif cgz_question_loc == 2:
+                    print("Your irregular word is tocar \n")
+                    tocar()
+                elif cgz_question_loc == 3:
+                    print("Your irregular verb is jugar \n")
+                    jugar()
+                elif cgz_question_loc == 4:
+                    print("Your irregular verb is llegar \n")
+                    llegar()
+                elif cgz_question_loc == 5:
+                    print("Your irregular verb is pagar \n")
+                    pagar()
+                elif cgz_question_loc == 6:
+                    print("Your irregular verb is almorzar \n")
+                    almorzar()
+                elif cgz_question_loc == 7:
+                    print("Your irregular verb is empezar \n")
+                    empezar()
+                elif cgz_question_loc == 8:
+                    print("Your irregular verb is organizar \n")
+                    organizar()
+                else:
+                    ("question_loc is out of the range between 0-9. Check for any errors in code\n")
+                stop()
+        elif preterite_selection == "5":
+            while True:
+                signalQuiz()
+                stop()
+    elif selection == "2":
+        solution = input("(1) Signals for imperfect verbs")
+        if solution == '1':
+            while True:
+                imperfectSignalQuiz()
+                stop()
+        else:
+            print("Invalid selection\n")
+            sys.exit()
+main()
