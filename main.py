@@ -3989,6 +3989,7 @@ def signalQuiz():
             print("There is an error in the code under signalQuiz() \n")
         print("Current Score: ", score)
 
+
 def imperfectSignalQuiz():
     global score
     for x in range(1):
@@ -4008,7 +4009,7 @@ def imperfectSignalQuiz():
                 score
                 score += 1
             else:
-              print("That is incorrect. The correct answer is ", imperfect_signals.get("sometimes "))
+                print("That is incorrect. The correct answer is ", imperfect_signals.get("sometimes "))
         elif signal_question == 2:
             ans38 = input("other times \n")
             if ans38.lower() == imperfect_signals.get("other times "):
@@ -4147,7 +4148,9 @@ def imperfectSignalQuiz():
                 print("That is incorrect. The correct answer is ", imperfect_signals.get("por un rato "))
         else:
             print("There is an error in the code under imperfectSignalQuiz() \n")
-        print("Current Score: ", score)# ---------------------Vocabulary of Imperfect Verbs----------------------
+        print("Current Score: ", score)  # ---------------------Vocabulary of Imperfect Verbs----------------------
+
+
 andar_conj_words = {
     "(Yo)": "ANDUVE",
     "(Tú)": "ANDUVISTE",
@@ -4646,9 +4649,9 @@ organizar_conj_words = {
 
 # ----------------------The Preterite is used for:---------------------
 preterite_uses = ["Specific actions or events completed in the past.", "Isolated actions that happened once",
-                "Narrating a series of completed actions or events.",
-                "Interrupting an action that was already happening.",
-                "Preterite of 'Hay' = HUBO (There was, there were)"]
+                  "Narrating a series of completed actions or events.",
+                  "Interrupting an action that was already happening.",
+                  "Preterite of 'Hay' = HUBO (There was, there were)"]
 
 # -----------------------Signals----------------------------------------
 signals = {
@@ -4689,26 +4692,44 @@ signals = {
 }
 
 imperfect_signals = {
-"often ": "a menudo",
-"sometimes ": "a veces",
-"other times ": "algunas veces",
-"each year ": "cada año",
-"cada día ": "each day",
-"cada semana": "each week",
-"con frecuencia ": "frequently",
-"de costumbre ": "as usual",
-"de vez en cuando": " from time to time",
-"durante ": "during",
-"en aquella época ": "at that time",
-"frecuentemente ": "frequently",
-"generalmente ": "generally",
-"mientras ": "while",
-"muchas veces ": "many times",
-"mucho ": "a lot",
-"nunca ": "never",
-"por lo general ": "generally",
-"por un rato ": "for awhile",
+    "often ": "a menudo",
+    "sometimes ": "a veces",
+    "other times ": "algunas veces",
+    "each year ": "cada año",
+    "cada día ": "each day",
+    "cada semana": "each week",
+    "con frecuencia ": "frequently",
+    "de costumbre ": "as usual",
+    "de vez en cuando": " from time to time",
+    "durante ": "during",
+    "en aquella época ": "at that time",
+    "frecuentemente ": "frequently",
+    "generalmente ": "generally",
+    "mientras ": "while",
+    "muchas veces ": "many times",
+    "mucho ": "a lot",
+    "nunca ": "never",
+    "por lo general ": "generally",
+    "por un rato ": "for a while",
 }
+changes = [["Conocer (Imperfect)", "Knew each other forever"],
+           ["Saber (Imperfect)", "Knew"],
+           ["Poder (Imperfect)", "Was able"],
+           ["Poder as Negative (Imperfect)", "Couldn't"],
+           ["Querer (Imperfect)", "Wanted to"],
+           ["Querer as Negative (Imperfect)", "Didn't want"],
+           ["Tener (Imperfect)", "Had"],
+           ["Haber (Imperfect)", "Happened in the past"],
+           ["Conocer (Preterite)", "Got to know, meet, get acquainted"],
+           ["Saber (Preterite)", "Fount out, realize"],
+           ["Poder (Preterite)", "Succeeded, managed"],
+           ["Poder as Negative (Preterite)", "Failed"],
+           ["Querer (Preterite)", "Tried to, but gave up"],
+           ["Querer as Negative (Preterite)", "Refused"],
+           ["Tener (Preterite)", "Experienced"],
+           ["Haber (Preterite)", "Happened once"]]
+
+
 # -----------------------Housekeeping---------------------------------
 def stop():
     dec = input("Click [ENTER] to continue or any other key to stop \n")
@@ -4717,19 +4738,37 @@ def stop():
         sys.exit()
 
 
+# -------------------------Definition Changes-------------------------------------------
+def change():
+    global score
+    for i in range(1):
+        for x in range(len(changes)):
+            inp = input(changes[x][0])
+            if inp == changes[x][1].lower():
+                print("That is corrent\n")
+                score
+                score += 1
+                print(score)
+            else:
+                print("That is incorrect, the correct solution is", changes[x][1])
+                print("Score: ", score)
+
+
 # ----------------------Practice Code-------------------
 def main():
     print("Para practicar para la prueba, yo hice esta programma computadora\n")
     print("***Only the preterite verb quiz is done\n")
     selection = input("(1) Pretérito o (2) Imperfecto \n")
     if selection == "1":
-        preterite_selection = input("Sus opciones son (1) verbos irregulares, (2) Stem Changers,  (3) -CAR, -GAR, -ZAR, (4) Cuándo debe usar un verbo pretérito, y (5) señales \n")
+        preterite_selection = input(
+            "Sus opciones son (1) verbos irregulares, (2) Stem Changers,  (3) -CAR, -GAR, -ZAR, (4) Cuándo debe usar un verbo pretérito, y (5) señales \n")
         if preterite_selection == "1":
             irregular_list = ["Andar (to walk)", "Caber (to fit)", "Conducir (to drive)", "Dar (to give)",
-                                "Decir (to tell)", "Estar (to be)", "Hacer (to do/make)", "Ir (to go)",
-                                "Poder (to be able to)", "Poner (to put)", "Querer (to want)", "Saber(to know)", "Ser(to be)",
-                                "Tener (to have)", "Traducir (to translate)", "Traer (to bring)", "Venir (to come)",
-                                "verb(to see)"]
+                              "Decir (to tell)", "Estar (to be)", "Hacer (to do/make)", "Ir (to go)",
+                              "Poder (to be able to)", "Poner (to put)", "Querer (to want)", "Saber(to know)",
+                              "Ser(to be)",
+                              "Tener (to have)", "Traducir (to translate)", "Traer (to bring)", "Venir (to come)",
+                              "verb(to see)"]
             print("This category is Irregular Verbs\n")
             rand_word = [x for x in range(17)]
             np.random.shuffle(rand_word)
@@ -4799,9 +4838,10 @@ def main():
             stem_changers_init = input(
                 "Verbs that end in -ir and goes through a stem-change (boot verbs) are the only verbs that go through a stem change in the preterite tense. The changes are [e to i] and [o to u]. For verbs that end in [aer, eer, oír, oer, or uir], there is a special spelling change. In the third person forms, the [i becomes a y] (ex. yó, yeron). The remaining forms gain written accent over the letter i, except for [uir] verbs, where there are no irregular accents. Verbs that end in [guir] do not follow this pattern. (Click enter once you are done reading this) \n")
             if stem_changers_init == "":
-                stem_changers_list = ["Dormir (to sleep)", "Morir (to die)", "Pedir (to ask for)", "Preferir (to prefer)",
-                                        "Seguir (to follow)", "Sentir (to feel)", "Caer (to fall)", "Creer (to think)",
-                                        "Leer (to read)", "Oir (to hear)", "Destruir (to destroy)"]
+                stem_changers_list = ["Dormir (to sleep)", "Morir (to die)", "Pedir (to ask for)",
+                                      "Preferir (to prefer)",
+                                      "Seguir (to follow)", "Sentir (to feel)", "Caer (to fall)", "Creer (to think)",
+                                      "Leer (to read)", "Oir (to hear)", "Destruir (to destroy)"]
                 print("This category is Stem Changers\n")
                 stem_changer_rand_word = [x for x in range(11)]
                 np.random.shuffle(stem_changer_rand_word)
@@ -4858,7 +4898,11 @@ def main():
                         print("Current Score: ", score)
                         stop()
         elif preterite_selection == "3":
-            cgz_irregular_list = cgz_irregular_list = ["Buscar (to search)","Sacar (to take)","Tocar (to play [ex. instrument])", "Jugar (to play [ex. sports])","Llegar (to arrive)","Pagar (to pay)", "Almorzar (to eat lunch)", "Empezar (To start)","Organizar (to organize)"]
+            cgz_irregular_list = cgz_irregular_list = ["Buscar (to search)", "Sacar (to take)",
+                                                       "Tocar (to play [ex. instrument])",
+                                                       "Jugar (to play [ex. sports])", "Llegar (to arrive)",
+                                                       "Pagar (to pay)", "Almorzar (to eat lunch)",
+                                                       "Empezar (To start)", "Organizar (to organize)"]
             print("This category is Irregular Verbs\n")
             cgz_rand_word = [x for x in range(9)]
             np.random.shuffle(cgz_rand_word)
@@ -4900,12 +4944,18 @@ def main():
                 signalQuiz()
                 stop()
     elif selection == "2":
-        solution = input("(1) Signals for imperfect verbs")
+        solution = input("(1) Signals for imperfect verbs or (2) Definition changes")
         if solution == '1':
             while True:
                 imperfectSignalQuiz()
                 stop()
+        elif solution == '2':
+            while True:
+                change()
+                stop()
         else:
             print("Invalid selection\n")
             sys.exit()
+
+
 main()
